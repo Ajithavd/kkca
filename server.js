@@ -101,15 +101,14 @@ ${current_time}`;
     // 5. Setup Nodemailer Transporter
     const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
+  port: 587,
+  secure: false,
+  requireTLS: true,
   auth: {
     user: emailUser,
     pass: emailPass
   },
-  connectionTimeout: 30000,
-  greetingTimeout: 30000,
-  socketTimeout: 30000,
+  family: 4,
   logger: true,
   debug: true
 });
