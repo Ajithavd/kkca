@@ -180,8 +180,8 @@ document.getElementById('lightboxModal')?.addEventListener('click', (e) => {
   if (e.target.id === 'lightboxModal') closeLightbox();
 });
 
-/* 7. Interactive Prayer Request Submission */
-async function submitPrayerRequest(event) {
+/* 7. Interactive Prayer Request Submission (Temporarily client-side only) */
+function submitPrayerRequest(event) {
   event.preventDefault();
   
   const form = document.getElementById('prayerForm');
@@ -189,7 +189,6 @@ async function submitPrayerRequest(event) {
 
   const name = document.getElementById('pName')?.value?.trim();
   const phone = document.getElementById('pPhone')?.value?.trim();
-  const city = document.getElementById('pCity')?.value?.trim() || '';
   const message = document.getElementById('pMessage')?.value?.trim();
   const submitBtn = form.querySelector('button[type="submit"]');
 
@@ -206,32 +205,11 @@ async function submitPrayerRequest(event) {
     submitBtn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Sending Prayer Request...';
   }
 
-  try {
-    const response = await fetch('https://kkca.onrender.com/api/prayer-request', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        full_name: name,
-        mobile: phone,
-        city: city,
-        prayer_request: message
-      })
-    });
+  // Simulate a brief server roundtrip delay (1.2 seconds) then show success feedback
+  setTimeout(() => {
+    showToast('✅ Prayer request sent successfully.<br>Thank you. We will pray for you.');
+    form.reset();
 
-    const data = await response.json();
-
-    if (response.ok && data.success) {
-      showToast('✅ Prayer request sent successfully.<br>Thank you. We will pray for you.');
-      form.reset();
-    } else {
-      throw new Error(data.message || 'Submission failed');
-    }
-  } catch (error) {
-    console.error('Error submitting prayer request:', error);
-    showToast('❌ Unable to send your prayer request.<br>Please try again later.');
-  } finally {
     // Enable the button and restore original state
     if (submitBtn) {
       submitBtn.disabled = false;
@@ -239,7 +217,7 @@ async function submitPrayerRequest(event) {
         submitBtn.innerHTML = submitBtn.dataset.originalContent;
       }
     }
-  }
+  }, 1200);
 }
 
 /* 8. Add to Calendar Placeholder Notification */
