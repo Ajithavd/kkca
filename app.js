@@ -207,7 +207,7 @@ async function submitPrayerRequest(event) {
   }
 
   try {
-    const response = await fetch('/api/prayer-request', {
+    const response = await fetch('https://kkca.onrender.com/api/prayer-request', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
