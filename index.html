@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>King of Kings Christian Assembly | KKCA Ministries | Ranipet & Vellore</title>
+  <meta name="description" content="King of Kings Christian Assembly (KKCA Ministries) under the auspices of Beracha Prayer House. Senior Pastor Pr. P. A. Ravichandran. Join us for Sunday Worship, Promise Services, and Fasting Prayers in Arapakkam, Ranipet.">
+  <meta name="keywords" content="King of Kings Christian Assembly, KKCA Ministries, Pastor Ravichandran, Beracha Prayer House, Church Arapakkam Ranipet, Sunday Worship Vellore, Tamil Christian Ministry">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Mukta+Malar:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container bar-content">
+      <div class="bar-info">
+        <span><i class="fa-solid fa-phone-volume"></i> 24/7 Prayer Helpline: <a href="tel:+918300016767">+91 83000 16767</a></span>
+        <span class="divider">|</span>
+        <span><i class="fa-solid fa-location-dot"></i> Arapakkam, Ranipet District, Tamil Nadu</span>
+      </div>
+      <div class="bar-socials">
+        <a href="https://youtube.com/@kkcaministries9271?si=IEL1mB9_4Rrsy510" target="_blank" aria-label="YouTube Channel"><i class="fa-brands fa-youtube"></i> KKCA MINISTRIES</a>
+        <a href="#give" class="badge-give"><i class="fa-solid fa-heart"></i> Give Online</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo">
+        <img src="assets/images/logo.png" alt="KKCA Emblem Logo" class="logo-img">
+        <div class="brand-text">
+          <span class="brand-title">KING OF KINGS</span>
+          <span class="brand-subtitle">CHRISTIAN ASSEMBLY <span class="tamil-inline">(ராஜாதி ராஜா கிறிஸ்தவ சபை)</span></span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#services" class="nav-link">Service Timings</a>
+        <a href="#give" class="nav-link">Give & Offering</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Contact & Location</a>
+        <a href="tel:+918300016767" class="btn btn-outline-nav"><i class="fa-solid fa-phone"></i> Helpline</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-backdrop">
+      <img src="assets/images/hero-stage.jpg" alt="King of Kings Sanctuary Stage" class="hero-bg-img">
+      <div class="hero-overlay"></div>
+    </div>
+    
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <i class="fa-solid fa-crown"></i> Under the Auspices of Beracha Prayer House, Chennai | Reg No: 76/IV/2013
+      </div>
+      
+      <h1 class="hero-title">
+        Welcome to <span class="text-indigo-gradient">King of Kings</span> Christian Assembly
+      </h1>
+      <p class="hero-tamil-name">ராஜாதி ராஜா கிறிஸ்தவ சபை</p>
+      
+      <p class="hero-subtitle">
+        A place of hope, restoration, and divine spiritual growth. For over 26 years, God has faithfully led our ministry, transforming lives, breaking bondage, and manifesting His power.
+      </p>
+
+      <blockquote class="hero-verse">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        “I shall not die, but live, and declare the works of the Lord.”
+        <cite>— Psalm 118:17</cite>
+      </blockquote>
+
+      <div class="hero-actions">
+        <a href="#services" class="btn btn-primary btn-lg"><i class="fa-solid fa-calendar-days"></i> Service Timings</a>
+        <a href="#about" class="btn btn-secondary btn-lg"><i class="fa-solid fa-book-open"></i> Pastor's Testimony</a>
+        <a href="#give" class="btn btn-gold btn-lg"><i class="fa-solid fa-hand-holding-heart"></i> Tithes & Offerings</a>
+      </div>
+
+      <!-- Live Service Countdown Card -->
+      <div class="service-countdown-card">
+        <div class="countdown-header">
+          <i class="fa-solid fa-clock"></i> Next Worship Gathering
+        </div>
+        <div class="countdown-timer" id="countdownTimer">
+          <div class="time-block"><span id="days">00</span><label>Days</label></div>
+          <div class="time-block"><span id="hours">00</span><label>Hours</label></div>
+          <div class="time-block"><span id="minutes">00</span><label>Mins</label></div>
+          <div class="time-block"><span id="seconds">00</span><label>Secs</label></div>
+        </div>
+        <div class="countdown-next" id="nextServiceName">Sunday Morning Worship | Every Sunday @ 9:00 AM</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE VISION SECTION -->
+  <section class="section vision-section bg-indigo-light">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-heading"><i class="fa-solid fa-compass"></i> Divine Purpose</span>
+        <h2 class="section-title">Our Core Vision</h2>
+        <div class="title-underline center"></div>
+      </div>
+
+      <div class="grid grid-3">
+        <!-- Card 1 -->
+        <div class="card vision-card">
+          <div class="vision-icon">
+            <i class="fa-solid fa-bible"></i>
+          </div>
+          <h3>To Preach the Truth</h3>
+          <p>Guiding precious souls into the true light, eternal peace, and salvation of Jesus Christ through uncompromised biblical teachings.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card vision-card highlight-card">
+          <div class="vision-icon">
+            <i class="fa-solid fa-hands-praying"></i>
+          </div>
+          <h3>To Bring Deliverance</h3>
+          <p>Fervently praying for the sick, brokenhearted, and those bound by darkness, trusting God’s miraculous healing power.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card vision-card">
+          <div class="vision-icon">
+            <i class="fa-solid fa-church"></i>
+          </div>
+          <h3>To Build the Church</h3>
+          <p>Raising a generation of strong believers rooted in the Word, equipped to live victorious and God-glorifying lives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US / PASTOR'S TESTIMONY -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="grid grid-2-custom align-center">
+        <div class="about-image-wrapper">
+          <div class="image-frame">
+            <img src="assets/images/pastor-ravichandran.jpg" alt="Senior Pastor Ps. P. A. Ravichandran" class="about-main-img">
+            <div class="pastor-badge-overlay">
+              <i class="fa-solid fa-cross"></i>
+              <div>
+                <strong>Ps. P. A. Ravichandran</strong>
+                <span>Senior Pastor & Founder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text-content">
+          <span class="sub-heading"><i class="fa-solid fa-heart-pulse"></i> Journey from Darkness to Grace</span>
+          <h2 class="section-title">The Pastor’s Testimony</h2>
+          <div class="title-underline"></div>
+
+          <blockquote class="scripture-box">
+            “I will instruct you and teach you in the way you should go; I will guide you with My eye.”
+            <cite>— Psalm 32:8</cite>
+          </blockquote>
+
+          <p class="lead-text">
+            My name is <strong>Ps. P. A. Ravichandran</strong>. Raised in a family of five, my father served in the Indian Air Force and later worked at the State Bank of India. Though I had high aspirations for education and professional success, my life took a dark spiraling turn into emptiness and addiction, leading to severe despair and suicidal attempts.
+          </p>
+
+          <p class="body-text">
+            In my darkest hour, God brought a divine encounter through Pastor M.K. Sam Sundaram with the words: <em>“Young man, God has chosen you. He has a need for you.”</em> After a life-threatening hospitalization where doctors gave up hope, the Lord Jesus appeared in a vision of bright light, saying: 
+            <strong class="highlight-quote">“I will give you life. You shall do My honorable ministry.”</strong>
+          </p>
+
+          <div class="testimony-highlights">
+            <div class="th-item">
+              <i class="fa-solid fa-fire-flame-curved"></i>
+              <span><strong>1995 Baptism:</strong> Anointed with the Holy Spirit at Benny Hinn Marina Beach Crusade.</span>
+            </div>
+            <div class="th-item">
+              <i class="fa-solid fa-seedling"></i>
+              <span><strong>1999 Foundation:</strong> First church building laid in faith, consecrated July 27, 2000.</span>
+            </div>
+            <div class="th-item">
+              <i class="fa-solid fa-lion"></i>
+              <span><strong>Revelation 19:16:</strong> Ministry named KING OF KINGS CHURCH — Lion of the Tribe of Judah.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline of Divine Milestones -->
+      <div class="timeline-container">
+        <h3 class="timeline-heading text-center">26 Years of Overflowing Grace & Expansion</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">1999 – 2000</span>
+              <h4>Foundation & Miracle Consecration</h4>
+              <p>God miraculously altered government pension policies to fund the first church construction, consecrated on July 27, 2000.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2003 – 2007</span>
+              <h4>Breakthrough & Family Blessing</h4>
+              <p>God broke the curse of childlessness, blessing Ps. Ravichandran and Mrs. Jhansi with three beautiful daughters.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2010 – 2011</span>
+              <h4>Official Name & Album Release</h4>
+              <p>God revealed the name "KING OF KINGS CHURCH" (Rev 19:16). Released devotional album <em>“Yesuvin Ratham” (The Blood of Jesus)</em>.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2013 – 2014</span>
+              <h4>Faith Sanctuary Construction</h4>
+              <p>Built a new 30x50 ft sanctuary entirely through faith—without taking loans or printing donation books.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2016 – Present</span>
+              <h4>Sanctuary Portico & Multi-Hall Expansion</h4>
+              <p>Expanded additional hall spaces and a church portico to accommodate our rapidly growing worshiping congregation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE TIMINGS SECTION -->
+  <section class="section services-section bg-indigo-dark text-white" id="services">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-heading text-gold"><i class="fa-solid fa-clock"></i> Gather With Us</span>
+        <h2 class="section-title text-white">Service Timings</h2>
+        <div class="title-underline center bg-gold"></div>
+        <p class="section-lead">Come experience anointed worship, powerful Word, healing, and prophetic night prayers.</p>
+      </div>
+
+      <!-- Schedule Table / Cards -->
+      <div class="services-table-wrapper">
+        <table class="services-table">
+          <thead>
+            <tr>
+              <th>Service / Gathering</th>
+              <th>Occurrence & Day</th>
+              <th>Time</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="featured-row">
+              <td>
+                <div class="service-name">
+                  <i class="fa-solid fa-sun text-gold"></i>
+                  <div>
+                    <strong>Sunday Morning Worship Service</strong>
+                    <span class="badge badge-indigo">Main Gathering</span>
+                  </div>
+                </div>
+              </td>
+              <td>Every Sunday</td>
+              <td><span class="time-pill">9:00 AM – 11:00 AM</span></td>
+              <td><a href="#contact" class="btn btn-sm btn-gold">Join Service</a></td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="service-name">
+                  <i class="fa-solid fa-sparkles text-indigo"></i>
+                  <div>
+                    <strong>Monthly Promise Service</strong>
+                    <span class="badge badge-light">1st of Month</span>
+                  </div>
+                </div>
+              </td>
+              <td>Every Month 1st Day</td>
+              <td><span class="time-pill">5:30 AM – 7:00 AM</span></td>
+              <td><button class="btn btn-sm btn-outline-white" onclick="addToCal('Promise Service', '05:30')">Remind Me</button></td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="service-name">
+                  <i class="fa-solid fa-wine-glass text-indigo"></i>
+                  <div>
+                    <strong>Holy Communion Service</strong>
+                  </div>
+                </div>
+              </td>
+              <td>Every Month 1st Sunday</td>
+              <td><span class="time-pill">9:00 AM – 12:00 PM</span></td>
+              <td><button class="btn btn-sm btn-outline-white" onclick="addToCal('Holy Communion', '09:00')">Remind Me</button></td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="service-name">
+                  <i class="fa-solid fa-child-reaching text-indigo"></i>
+                  <div>
+                    <strong>Sunday School Ministry</strong>
+                  </div>
+                </div>
+              </td>
+              <td>Every Sunday</td>
+              <td><span class="time-pill">11:00 AM – 12:00 PM</span></td>
+              <td><button class="btn btn-sm btn-outline-white" onclick="addToCal('Sunday School', '11:00')">Kids Corner</button></td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="service-name">
+                  <i class="fa-solid fa-users-gear text-indigo"></i>
+                  <div>
+                    <strong>Youth Meeting</strong>
+                  </div>
+                </div>
+              </td>
+              <td>Every Month 1st Sunday</td>
+              <td><span class="time-pill">6:30 PM – 8:00 PM</span></td>
+              <td><button class="btn btn-sm btn-outline-white" onclick="addToCal('Youth Meeting', '18:30')">Join Youth</button></td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="service-name">
+                  <i class="fa-solid fa-heart text-indigo"></i>
+                  <div>
+                    <strong>Sisters Fellowship Meeting</strong>
+                  </div>
+                </div>
+              </td>
+              <td>Every Month 3rd Sunday</td>
+              <td><span class="time-pill">6:30 PM – 8:00 PM</span></td>
+              <td><button class="btn btn-sm btn-outline-white" onclick="addToCal('Sisters Meeting', '18:30')">Remind Me</button></td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="service-name">
+                  <i class="fa-solid fa-person-praying text-indigo"></i>
+                  <div>
+                    <strong>Friday Fasting Prayer</strong>
+                  </div>
+                </div>
+              </td>
+              <td>Every Friday</td>
+              <td><span class="time-pill">9:30 AM – 12:30 PM</span></td>
+              <td><button class="btn btn-sm btn-outline-white" onclick="addToCal('Friday Fasting', '09:30')">Remind Me</button></td>
+            </tr>
+
+            <tr class="night-prayer-row">
+              <td>
+                <div class="service-name">
+                  <i class="fa-solid fa-moon text-gold"></i>
+                  <div>
+                    <strong>New Moon Night Prayer (Amavasai)</strong>
+                  </div>
+                </div>
+              </td>
+              <td>Every Month (Amavasai Day)</td>
+              <td><span class="time-pill time-gold">9:30 PM Onwards</span></td>
+              <td><a href="tel:+918300016767" class="btn btn-sm btn-gold"><i class="fa-solid fa-phone"></i> Prayer Line</a></td>
+            </tr>
+
+            <tr class="night-prayer-row">
+              <td>
+                <div class="service-name">
+                  <i class="fa-solid fa-circle-notch text-gold"></i>
+                  <div>
+                    <strong>Full Moon Night Prayer (Pournami)</strong>
+                  </div>
+                </div>
+              </td>
+              <td>Every Month (Pournami Day)</td>
+              <td><span class="time-pill time-gold">9:30 PM Onwards</span></td>
+              <td><a href="tel:+918300016767" class="btn btn-sm btn-gold"><i class="fa-solid fa-phone"></i> Prayer Line</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- GIVE / TITHE & OFFERINGS SECTION -->
+  <section class="section give-section bg-indigo-light" id="give">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-heading"><i class="fa-solid fa-hand-holding-heart"></i> Honor the Lord</span>
+        <h2 class="section-title">Tithes & Offerings</h2>
+        <div class="title-underline center"></div>
+        <p class="section-lead">Your faithful tithes and offerings help us maintain God's house, conduct daily & special prayer services, support outreach, and preach the Gospel.</p>
+      </div>
+
+      <blockquote class="give-scripture text-center">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        “Every man according as he purposeth in his heart, so let him give; not grudgingly, or of necessity: for God loveth a cheerful giver.”
+        <cite>— 2 Corinthians 9:7</cite>
+      </blockquote>
+
+      <div class="grid grid-2-custom align-center give-grid">
+        <!-- QR Code Card -->
+        <div class="card qr-card text-center">
+          <div class="qr-badge"><i class="fa-solid fa-qrcode"></i> Scan to Pay via GPay / Any UPI</div>
+          <div class="qr-img-wrapper" id="qrWrapper" onclick="openLightbox('assets/images/gpay-qr.jpg', 'GPay QR Code - KKCA MINISTRIES')">
+            <img src="assets/images/gpay-qr.jpg" alt="Google Pay UPI QR Code - KKCA Ministries" class="qr-img">
+            <div class="qr-zoom-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i> Click to Enlarge QR
+            </div>
+          </div>
+          <p class="qr-tip">Supports Google Pay, PhonePe, Paytm, BHIM, and all UPI applications.</p>
+        </div>
+
+        <!-- Bank & UPI Details Card -->
+        <div class="card payment-details-card">
+          <h3><i class="fa-solid fa-building-columns"></i> Digital Transfer Details</h3>
+          <p class="sub-text">Use the credentials below for direct bank/UPI transfers:</p>
+
+          <div class="copy-field-group">
+            <div class="field-item">
+              <label><i class="fa-solid fa-mobile-screen-button"></i> GPay / Mobile Number:</label>
+              <div class="copy-input-box">
+                <input type="text" value="+91 97892 30885" readonly id="gpayNum">
+                <button class="btn-copy" onclick="copyText('gpayNum')"><i class="fa-regular fa-copy"></i> Copy</button>
+              </div>
+            </div>
+
+            <div class="field-item">
+              <label><i class="fa-solid fa-at"></i> Official UPI ID:</label>
+              <div class="copy-input-box">
+                <input type="text" value="kkcaministries@oksbi" readonly id="upiId">
+                <button class="btn-copy" onclick="copyText('upiId')"><i class="fa-regular fa-copy"></i> Copy</button>
+              </div>
+            </div>
+
+            <div class="field-item">
+              <label><i class="fa-solid fa-user-check"></i> Account Holder Name:</label>
+              <div class="copy-input-box">
+                <input type="text" value="Ps. P. A. Ravichandran / King of Kings Church" readonly id="accountName">
+                <button class="btn-copy" onclick="copyText('accountName')"><i class="fa-regular fa-copy"></i> Copy</button>
+              </div>
+            </div>
+
+            <div class="field-item">
+              <label><i class="fa-solid fa-phone"></i> Church Office Landline:</label>
+              <div class="copy-input-box">
+                <input type="text" value="0416-2257556" readonly id="officePhone">
+                <button class="btn-copy" onclick="copyText('officePhone')"><i class="fa-regular fa-copy"></i> Copy</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="give-thank-you">
+            <i class="fa-solid fa-hands-clapping text-indigo"></i>
+            <span>May the Lord bless your cheerful heart and open the windows of heaven upon your life!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY & MEDIA SECTION -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-heading"><i class="fa-solid fa-images"></i> Moments of Grace</span>
+        <h2 class="section-title">Photo Gallery & Media</h2>
+        <div class="title-underline center"></div>
+        <p class="section-lead">Highlights of sanctuary consecration, anointed worship, children ministry, and special night prayers.</p>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        <!-- Item 1: Stage & Consecration -->
+        <div class="gallery-card">
+          <img src="assets/images/hero-stage.jpg" alt="King of Kings Sanctuary Stage & Altar">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span class="gallery-cat">Sanctuary Consecration</span>
+              <h4>King of Kings Main Stage & Altar</h4>
+              <p>Beautiful sanctuary designed for praise and deliverance.</p>
+            </div>
+            <button class="btn-lightbox" onclick="openLightbox('assets/images/hero-stage.jpg', 'King of Kings Main Stage & Altar')">
+              <i class="fa-solid fa-expand"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Item 2: Dignitaries & Pastors -->
+        <div class="gallery-card">
+          <img src="assets/images/gallery-pastors.jpg" alt="Pastors and Church Leaders on Stage">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span class="gallery-cat">Milestone & Leadership</span>
+              <h4>Senior Pastor Ps. P. A. Ravichandran & Guests</h4>
+              <p>26th Anniversary Celebration & Anointed Guest Ministers.</p>
+            </div>
+            <button class="btn-lightbox" onclick="openLightbox('assets/images/gallery-pastors.jpg', 'Senior Pastor Ps. P. A. Ravichandran & Guests')">
+              <i class="fa-solid fa-expand"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Item 3: Logo & Emblem -->
+        <div class="gallery-card">
+          <img src="assets/images/logo.png" alt="Official KKCA Emblem Lion of Judah">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span class="gallery-cat">Official Emblem</span>
+              <h4>Lion of the Tribe of Judah Emblem</h4>
+              <p>Revelation 19:16 - King of Kings & Lord of Lords.</p>
+            </div>
+            <button class="btn-lightbox" onclick="openLightbox('assets/images/logo.png', 'Lion of the Tribe of Judah Emblem')">
+              <i class="fa-solid fa-expand"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Item 4: Senior Pastor Ps. P. A. Ravichandran -->
+        <div class="gallery-card">
+          <img src="assets/images/pastor-ravichandran.jpg" alt="Senior Pastor Ps. P. A. Ravichandran">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span class="gallery-cat">Senior Pastor</span>
+              <h4>Ps. P. A. Ravichandran</h4>
+              <p>Founder & Senior Pastor of KKCA Ministries.</p>
+            </div>
+            <button class="btn-lightbox" onclick="openLightbox('assets/images/pastor-ravichandran.jpg', 'Senior Pastor Ps. P. A. Ravichandran')">
+              <i class="fa-solid fa-expand"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Item 5: QR Code for Offerings -->
+        <div class="gallery-card">
+          <img src="assets/images/gpay-qr.jpg" alt="GPay Giving QR Code">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span class="gallery-cat">Digital Giving</span>
+              <h4>Tithes & Offerings GPay QR</h4>
+              <p>UPI ID: kkcaministries@oksbi</p>
+            </div>
+            <button class="btn-lightbox" onclick="openLightbox('assets/images/gpay-qr.jpg', 'GPay Giving QR Code')">
+              <i class="fa-solid fa-expand"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- YouTube Channel Banner Card -->
+      <div class="youtube-banner-card">
+        <div class="yt-content">
+          <i class="fa-brands fa-youtube yt-logo"></i>
+          <div>
+            <h3>Watch Live Services & Prophetic Messages</h3>
+            <p>Subscribe to our official YouTube channel: <strong>KKCA MINISTRIES</strong></p>
+          </div>
+        </div>
+        <a href="https://youtube.com/@kkcaministries9271?si=IEL1mB9_4Rrsy510" target="_blank" class="btn btn-yt">
+          <i class="fa-brands fa-youtube"></i> Visit YouTube Channel
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT US & LOCATIONS & MAP SECTION -->
+  <section class="section contact-section bg-indigo-light" id="contact">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-heading"><i class="fa-solid fa-envelope-open-text"></i> Connect With Us</span>
+        <h2 class="section-title">Contact & Location</h2>
+        <div class="title-underline center"></div>
+        <p class="section-lead">We would love to pray with you and welcome you to our worship services.</p>
+      </div>
+
+      <div class="grid grid-2-custom">
+        <!-- Left Column: Contact Info Cards & Prayer Form -->
+        <div class="contact-info-column">
+          <!-- Pastor Card -->
+          <div class="card contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-user"></i></div>
+            <div>
+              <h4>Senior Pastor</h4>
+              <p class="highlight-text">Pr. P. A. Ravichandran (Pr. P. A. ரவிசந்திரன்)</p>
+            </div>
+          </div>
+
+          <!-- Phone & Helpline Grid -->
+          <div class="grid grid-2 contact-mini-grid">
+            <div class="card contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h4>Mobile & GPay</h4>
+                <p><a href="tel:+919789230885">+91 97892 30885</a></p>
+              </div>
+            </div>
+
+            <div class="card contact-card">
+              <div class="contact-icon highlight-icon"><i class="fa-solid fa-headset"></i></div>
+              <div>
+                <h4>24/7 Prayer Helpline</h4>
+                <p><a href="tel:+918300016767" class="text-indigo-bold">+91 83000 16767</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Email & Landline -->
+          <div class="grid grid-2 contact-mini-grid">
+            <div class="card contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-square-phone"></i></div>
+              <div>
+                <h4>Office Landline</h4>
+                <p>0416-2257556</p>
+              </div>
+            </div>
+
+            <div class="card contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h4>Email Address</h4>
+                <p><a href="mailto:kkcaministries@gmail.com">kkcaministries@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Prayer Request Drawer/Form -->
+          <div class="card prayer-form-card">
+            <h3><i class="fa-solid fa-hands-praying text-indigo"></i> Send Prayer Request</h3>
+            <p>Do you need prayer for healing, peace, family, or spiritual breakthrough?</p>
+            
+            <form id="prayerForm" onsubmit="submitPrayerRequest(event)">
+              <div class="form-group">
+                <input type="text" id="pName" placeholder="Your Full Name *" required>
+              </div>
+              <div class="form-group grid grid-2">
+                <input type="tel" id="pPhone" placeholder="Mobile Number *" required>
+                <input type="text" id="pCity" placeholder="City / Town">
+              </div>
+              <div class="form-group">
+                <textarea id="pMessage" rows="4" placeholder="Share your prayer request here..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                <i class="fa-solid fa-paper-plane"></i> Submit Prayer Request
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Right Column: Physical Addresses & Interactive Google Map -->
+        <div class="contact-map-column">
+          <!-- Church Address Box -->
+          <div class="card location-box">
+            <div class="loc-header">
+              <i class="fa-solid fa-church loc-icon"></i>
+              <div>
+                <h3>Church Worship Location</h3>
+                <span class="badge badge-indigo">Ranipet District</span>
+              </div>
+            </div>
+            <p class="address-text">
+              <strong>King of Kings Christian Assembly</strong><br>
+              Sivaraj Nagar, Arapakkam,<br>
+              Ranipet District – 632517, Tamil Nadu, India.
+            </p>
+            <a href="https://maps.app.goo.gl/aLK6NCoFc8SGCkDk9?g_st=ic" target="_blank" class="btn btn-directions">
+              <i class="fa-solid fa-location-arrow"></i> Open Directions in Google Maps
+            </a>
+          </div>
+
+          <!-- Embedded Dynamic Map View -->
+          <div class="map-wrapper card">
+            <div class="map-title-bar">
+              <span><i class="fa-solid fa-map-location-dot"></i> Live Map View</span>
+              <a href="https://maps.app.goo.gl/aLK6NCoFc8SGCkDk9?g_st=ic" target="_blank" class="map-link">View Full Map <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <iframe 
+              title="King of Kings Christian Assembly Location"
+              src="https://maps.google.com/maps?q=King%20of%20Kings%20Christian%20Assembly%20Arapakkam%20Ranipet&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              width="100%" 
+              height="350" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+
+          <!-- Administrative Office Box -->
+          <div class="card location-box admin-box">
+            <div class="loc-header">
+              <i class="fa-solid fa-building loc-icon"></i>
+              <div>
+                <h3>Administrative Office</h3>
+                <span class="badge badge-light">Vellore Office</span>
+              </div>
+            </div>
+            <p class="address-text">
+              <strong>KKCA Ministries Office</strong><br>
+              No. 280/B, Vivekanandar 3rd St, Phase-3,<br>
+              Sathuvachari, Vellore – 632009, Tamil Nadu, India.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-indigo-darkest text-white">
+    <div class="container">
+      <div class="footer-top grid grid-4">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-col brand-col">
+          <div class="footer-brand">
+            <img src="assets/images/logo.png" alt="KKCA Emblem" class="footer-logo">
+            <div>
+              <h3>KING OF KINGS</h3>
+              <span>CHRISTIAN ASSEMBLY</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Under the Auspices of Beracha Prayer House, Chennai. Trust Reg No: 76/IV/2013. Serving God and community for 26+ years.
+          </p>
+          <div class="footer-socials">
+            <a href="https://youtube.com/@kkcaministries9271?si=IEL1mB9_4Rrsy510" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="tel:+918300016767" aria-label="Helpline Phone"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:kkcaministries@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Pastor's Testimony</a></li>
+            <li><a href="#services">Worship Schedule</a></li>
+            <li><a href="#give">Tithes & Offerings</a></li>
+            <li><a href="#gallery">Photo Gallery</a></li>
+            <li><a href="#contact">Contact & Map</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Service Times Summary -->
+        <div class="footer-col">
+          <h4>Key Gathering Times</h4>
+          <ul class="footer-times">
+            <li><strong>Sunday Worship:</strong> 9:00 AM – 11:00 AM</li>
+            <li><strong>Promise Service:</strong> 1st Day | 5:30 AM</li>
+            <li><strong>Friday Fasting:</strong> 9:30 AM – 12:30 PM</li>
+            <li><strong>Night Prayers:</strong> Amavasai & Pournami 9:30 PM</li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Helpline & Scripture -->
+        <div class="footer-col">
+          <h4>24/7 Prayer Support</h4>
+          <p>Reach out anytime for urgent prayer and counseling.</p>
+          <a href="tel:+918300016767" class="btn btn-gold btn-block footer-phone-btn">
+            <i class="fa-solid fa-phone-volume"></i> +91 83000 16767
+          </a>
+          
+          <blockquote class="footer-verse">
+            “For the Lord is a great God, and a great King above all gods.”
+            <cite>— Psalm 95:3</cite>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center">
+        <p>&copy; <span id="year">2026</span> King of Kings Christian Assembly (KKCA Ministries). All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Gallery / QR -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="Enlarged Image">
+      <p id="lightboxCaption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast"></div>
+
+  <!-- Floating 24/7 Helpline Quick Action Button -->
+  <a href="tel:+918300016767" class="floating-helpline" aria-label="Call 24/7 Prayer Helpline">
+    <i class="fa-solid fa-phone-volume"></i>
+    <span class="floating-label">24/7 Prayer Line</span>
+  </a>
+
+  <!-- Floating WhatsApp Quick Action Button -->
+  <a href="https://wa.me/919789230885" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Custom JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>

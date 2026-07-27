@@ -1,0 +1,19 @@
+{
+  "name": "kkca-website-backend",
+  "version": "1.0.0",
+  "description": "Backend API for KKCA Ministries website prayer requests",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2",
+    "nodemailer": "^6.10.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
