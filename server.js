@@ -101,17 +101,26 @@ ${current_time}`;
     // 5. Setup Nodemailer Transporter
     const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
-  port: 587,
-  secure: false,
-  requireTLS: true,
+  port: 465,
+  secure: true,
   auth: {
     user: emailUser,
     pass: emailPass
   },
   connectionTimeout: 30000,
   greetingTimeout: 30000,
-  socketTimeout: 30000
+  socketTimeout: 30000,
+  logger: true,
+  debug: true
 });
+
+try {
+  await transporter.verify();
+  console.log("✅ SMTP connection successful");
+} catch (err) {
+  console.error("❌ SMTP VERIFY FAILED:", err);
+  throw err;
+}
 
     // 6. Send the Email
     const mailOptions = {
